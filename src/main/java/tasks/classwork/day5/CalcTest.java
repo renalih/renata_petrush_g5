@@ -1,4 +1,4 @@
-package main.java.tasks.classwork.day5;
+package tasks.classwork.day5;
 
 public class CalcTest {
 

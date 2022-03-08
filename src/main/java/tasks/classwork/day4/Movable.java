@@ -1,4 +1,4 @@
-package main.java.tasks.classwork.day4;
+package tasks.classwork.day4;
 
 public interface Movable {
 

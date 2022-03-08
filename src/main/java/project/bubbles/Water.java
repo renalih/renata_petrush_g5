@@ -1,4 +1,4 @@
-package main.java.tasks.project.bubbles;
+package project.bubbles;
 
 public abstract class Water {
 

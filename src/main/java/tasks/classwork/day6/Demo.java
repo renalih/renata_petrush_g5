@@ -1,4 +1,4 @@
-package main.java.tasks.classwork.day6;
+package tasks.classwork.day6;
 
 import java.text.DateFormat;
 import java.text.ParseException;
