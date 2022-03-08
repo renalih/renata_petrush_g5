@@ -1,4 +1,4 @@
-package main.java.tasks.homework.cycletask;
+package tasks.homework.week1.cycletask;
 
 public class CycleWhile {
 

@@ -1,2 +1,4 @@
-package tasks.classwork.day2;public class WhileDemo {
+package tasks.classwork.day2;
+
+public class WhileDemo {
 }
