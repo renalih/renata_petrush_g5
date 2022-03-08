@@ -1,4 +1,4 @@
-package main.java.tasks.homework.basetask;
+package tasks.homework.week1.basetask;
 
 public class Souce {
 
