@@ -2,12 +2,12 @@ package project.bubbles;
 
 public abstract class Water {
 
-    private String color;
-    private int transparency;
-    private String smell;
-    private int temperature;
+    private String color = "no";
+    private String transparency = "transparent";
+    private String smell = "no";
+    private int temperature = 0;
 
-    public Water(String color, int transparency, String smell, int temperature) {
+    public Water(String color, String transparency, String smell, int temperature) {
         this.color = color;
         this.transparency = transparency;
         this.smell = smell;
@@ -22,11 +22,11 @@ public abstract class Water {
         this.color = color;
     }
 
-    public int getTransparency() {
+    public String getTransparency() {
         return transparency;
     }
 
-    public void setTransparency(int transparency) {
+    public void setTransparency(String transparency) {
         this.transparency = transparency;
     }
 

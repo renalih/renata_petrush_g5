@@ -2,11 +2,11 @@ package project.bubbles;
 
 public class Bubble {
 
-    public static final double VOLUME = 0.3;
+    private static final double VOLUME = 0.3;
     private String gas;
 
 
-    public Bubble() {
+    public Bubble(String gas) {
         this.gas = gas;
     }
 
@@ -19,8 +19,12 @@ public class Bubble {
     }
 
 
-    public void burst(){
+    public void cramp(){
         System.out.println("Cramp!");
+    }
+
+    public double getVolume() {
+        return VOLUME;
     }
 
 
