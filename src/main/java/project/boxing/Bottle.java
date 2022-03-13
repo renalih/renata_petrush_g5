@@ -26,6 +26,6 @@ public class Bottle {
     }
 
     public void setWater(SparklingWater water) {
-       this.water = new SparklingWater("a", "b", "c", 1, true);
+      this.water = water; //в конструкторе
     }
 }
