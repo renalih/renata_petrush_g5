@@ -26,6 +26,6 @@ public class Bottle {
     }
 
     public void setWater(SparklingWater water) {
-        SparklingWater sparklingWater = new SparklingWater("a", "b", "c", 1, true);
+       this.water = new SparklingWater("a", "b", "c", 1, true);
     }
 }
