@@ -17,5 +17,17 @@ public class Cities {
             System.out.println(s);
         }
 
+        int counter = 0;
+        for(int i = 0; i < cities.size(); i++) {
+            counter++;
+        }
+        System.out.println(counter);
+
+        for(int i = 0; i < cities.size(); i++) {
+            System.out.print(cities.get(i) + " ");
+        }
+
+
+
     }
 }
