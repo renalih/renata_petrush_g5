@@ -1,4 +1,4 @@
-package tasks.homework.week5.zerotask;
+package main.java.tasks.homework.week5.zerotask;
 
 import java.util.Objects;
 
