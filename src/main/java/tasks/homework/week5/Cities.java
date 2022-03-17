@@ -1,4 +1,4 @@
-package tasks.homework.week5;
+package main.java.tasks.homework.week5;
 
 import java.util.ArrayList;
 import java.util.List;
