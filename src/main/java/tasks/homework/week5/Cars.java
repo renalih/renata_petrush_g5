@@ -1,4 +1,4 @@
-package tasks.homework.week5;
+package main.java.tasks.homework.week5;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
