@@ -1,4 +1,4 @@
-package tasks.classwork.day9;
+package main.java.tasks.classwork.day9;
 
 import java.util.HashMap;
 import java.util.Map;
