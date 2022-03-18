@@ -34,10 +34,10 @@ public class Figures {
 
         figures.set(3, "Треугольник");
 
-        System.out.println("");
+        System.out.println(" ");
 
         for(String s : figures) {
-            System.out.println(s + " ");
+            System.out.print(s + " ");
         }
     }
 }

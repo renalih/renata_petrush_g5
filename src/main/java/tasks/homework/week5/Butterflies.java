@@ -15,7 +15,7 @@ public class Butterflies {
         butterflies.add("Common blue");
 
         for(String s : butterflies) {
-            System.out.println("'" + s + "'");
+            System.out.println('"' + s + '"');
         }
 
         int counter = 0;

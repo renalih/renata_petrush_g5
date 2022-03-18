@@ -21,9 +21,24 @@ public class Cars {
 
         BufferedWriter out = new BufferedWriter(new FileWriter("cars.txt"));
         for (String s : cars) {
-            out.write("'" + s + "'" + "\n");
+            out.write('"' + s + '"' + "\n");
         }
         out.close();
 
+        for(String s : cars) {
+            int count = 0;
+            for (int i = 0; i < s.length(); i++) {
+                if (Character.isAlphabetic(s.charAt(i))) {
+                    count++;
+                }
+            }
+            if (count > 4) {  //ошибка при выполнении
+                cars.remove(s);
+            }
+        }
+
+        for(String s : cars) {
+            System.out.print(s + " ");
+        }
     }
 }

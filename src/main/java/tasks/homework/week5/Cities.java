@@ -17,17 +17,21 @@ public class Cities {
             System.out.println(s);
         }
 
-        int counter = 0;
-        for(int i = 0; i < cities.size(); i++) {
-            counter++;
+        int sum = 0;
+        for (String s : cities) {
+            int count = 0;
+            for (int i = 0; i < s.length(); i++) {
+                if (Character.isAlphabetic(s.charAt(i))) {
+                    count++;
+                }
+            }
+            sum += count;
+
         }
-        System.out.println(counter);
+        System.out.println(sum);
 
         for(int i = 0; i < cities.size(); i++) {
             System.out.print(cities.get(i) + " ");
         }
-
-
-
     }
 }
