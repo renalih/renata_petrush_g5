@@ -1,7 +1,6 @@
-package project.boxing;
+package main.java.project.vessel;
 
 import project.bubbles.SparklingWater;
-import project.bubbles.Water;
 
 public class Bottle {
 
@@ -17,7 +16,7 @@ public class Bottle {
     }
 
     public void warm(int temperature) {
-        this.water.setTemperature(temperature);
+        //this.water.setTemperature(temperature);
     }
 
     public SparklingWater getWater() {

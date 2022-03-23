@@ -2,10 +2,7 @@ package main.java.tasks.homework.week5;
 
 import main.java.tasks.homework.week5.zerotask.Sand;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class Sandbox {
     public static void main(String[] args) {
@@ -28,13 +25,22 @@ public class Sandbox {
 
         System.out.println("\n");
 
-        Map<Integer, Sand> sandsList = new HashMap<>();
+        Map<Integer, Sand> sandMap = new HashMap<>();
 
-        /*for (Map.Entry<Integer, Sand> entry : sandsList.entrySet()) {
-            entry.setValue(sandbox.add())*/
+        for (int i = 0; i < sandbox.size(); i++) {
+            sandMap.put(i, sandbox.get(i));
+        }
 
+        for (Map.Entry<Integer, Sand> entry : sandMap.entrySet()) {
+            System.out.println(entry.getKey());
+        }
 
+        for (Map.Entry<Integer, Sand> entry : sandMap.entrySet()) {
+            System.out.println(entry.getValue());
+        }
+
+        for (Map.Entry<Integer, Sand> entry : sandMap.entrySet()) {
+            System.out.println(entry.toString());
+        }
     }
-
-
 }

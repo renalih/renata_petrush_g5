@@ -1,4 +1,4 @@
-package tasks.classwork.day7;
+package main.java.tasks.classwork.day7;
 
 public class GenericContainer <T> {
 

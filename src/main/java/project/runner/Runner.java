@@ -1,6 +1,6 @@
-package project.bubbles;
+package main.java.project.runner;
 
-import project.boxing.Bottle;
+import main.java.project.vessel.Bottle;
 
 public class Runner {
 
