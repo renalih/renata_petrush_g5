@@ -17,11 +17,7 @@ public class Doubles {
         for (int i = 0; i < doubles.size(); i++) {
             multiply = multiply * doubles.get(i);
         }
-        System.out.println("Произведение всех чисел" + multiply);
+        System.out.println("Произведение всех чисел = " + multiply);
 
-        double sum = 0;
-        for (double d : doubles) {
-
-        }
     }
 }
