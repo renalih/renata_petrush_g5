@@ -1,18 +1,38 @@
 package main.java.project.vessel;
 
-import project.bubbles.SparklingWater;
+import main.java.project.material.Material;
+import main.java.project.stuff.SparklingWater;
+import main.java.project.stuff.Transformable;
 
-public class Bottle {
+public class Bottle extends Vessel implements Containable {
 
-    private double volume;
     private SparklingWater water;
+    private Transformable stuff;
 
-    public Bottle (double volume) {
-        this.volume = volume;
+    public Bottle(double volume, double diameter, double weight, Material material,
+                  SparklingWater water, Transformable stuff) {
+        super(volume, diameter = 2.0, weight, material);
+        this.water = water;
+        this.stuff = stuff;
+    }
+
+    @Override
+    public void addStuff(Transformable stuff) {
+
+    }
+
+    @Override
+    public Transformable removeStuff() {
+        return null;
+    }
+
+    @Override
+    public boolean isEmpty() {
+        return false;
     }
 
     public void open() {
-        this.water.setOpened(true);
+        this.water.setOpened();
     }
 
     public void warm(int temperature) {

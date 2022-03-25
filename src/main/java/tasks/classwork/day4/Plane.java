@@ -1,4 +1,4 @@
-package tasks.classwork.day4;
+package main.java.tasks.classwork.day4;
 
 public abstract class Plane extends Machinary{
 
