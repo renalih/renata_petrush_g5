@@ -15,4 +15,12 @@ public enum Material {
         this.color = color;
         this.density = density;
     }
+
+    public double getDensity() {
+        return density;
+    }
+
+    public void setDensity(double density) {
+        this.density = density;
+    }
 }
