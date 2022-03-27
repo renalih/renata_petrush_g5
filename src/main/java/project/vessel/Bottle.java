@@ -9,9 +9,9 @@ public class Bottle extends Vessel implements Containable {
     private SparklingWater water;
     private Transformable stuff;
 
-    public Bottle(double volume, double diameter, double weight, Material material,
+    public Bottle(double volume, double weight, Material material,
                   SparklingWater water, Transformable stuff) {
-        super(volume, diameter = 2.0, weight, material);
+        super(volume, 2.0, weight, material);
         this.water = water;
         this.stuff = stuff;
     }
