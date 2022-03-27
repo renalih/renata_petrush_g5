@@ -2,6 +2,7 @@ package main.java.tasks.homework.week6;
 
 import java.util.*;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 public class Person {
@@ -46,14 +47,19 @@ public class Person {
 
         List<Person> people = new ArrayList<Person>(100);
 
-        for (int i = 0; i < 101; i++) {
-            people.add(new Person("A", "C", 13));
-        }
-        System.out.println(people);
-
-        //Stream.generate(() -> new Person("a", "b", 13 )).limit(100).collect(Collectors.toList());
-
-
+        IntStream.rangeClosed(1, 100).boxed().map(number -> new Person("NameTest" + number,
+                "SurnameTest" + number, number < 15 || number > 30 ? new Random().ints(15,
+                30).findFirst().getAsInt() : number)).filter(x -> x.getAge() < 21).peek();
 
     }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", age=" + age +
+                '}';
+    }
 }
+
