@@ -1,7 +1,7 @@
 package main.java.tasks.homework.week6;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class Person {
@@ -41,9 +41,17 @@ public class Person {
     }
 
 
+
     public static void main(String[] args) {
 
-        List<Person> people = new ArrayList<>();
+        List<Person> people = new ArrayList<Person>(100);
+
+        for (int i = 0; i < 101; i++) {
+            people.add(new Person("A", "C", 13));
+        }
+        System.out.println(people);
+
+        //Stream.generate(() -> new Person("a", "b", 13 )).limit(100).collect(Collectors.toList());
 
 
 

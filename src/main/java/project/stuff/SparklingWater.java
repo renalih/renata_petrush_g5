@@ -3,8 +3,10 @@ package main.java.project.stuff;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
-public class SparklingWater extends Water{
+public class SparklingWater extends Water {
 
     private Bubble[] bubbles;
     private boolean isOpened;
@@ -30,15 +32,20 @@ public class SparklingWater extends Water{
 
         Thread.sleep(1000);
         List<Bubble> list = new ArrayList<>(10 + 5 * getTemperature());
-        list = Arrays.asList();
 
-        list.stream().map(() -> cramp);
+        for (int i = 0; i < list.size(); i++) {
+            list.add(new Bubble("CO2"));
+        }
 
+        for (Bubble b : list) {
+            b.cramp();
+        }
     }
 
-    public void setOpen(boolean isOpened) {
-        this.isOpened = isOpened;
-    }
+        public void setOpen(boolean isOpened) {
+            this.isOpened = isOpened;
+        }
+
 
     @Override
     public void setOpened() {

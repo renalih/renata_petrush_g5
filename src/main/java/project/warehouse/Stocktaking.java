@@ -6,10 +6,7 @@ public class Stocktaking {
 
     }
 
-    public static registerBox(VesselBox box) {
+    //public static registerBox(VesselBox box) {
 
     }
 
-
-
-}
