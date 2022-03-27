@@ -4,7 +4,8 @@ import main.java.project.stuff.Transformable;
 
 public interface Containable {
 
-    void addStuff (Transformable stuff);
+    default void addStuff(Transformable stuff) {
+    };
     Transformable removeStuff();
     boolean isEmpty();
     void open();
