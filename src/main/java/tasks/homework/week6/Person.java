@@ -49,7 +49,9 @@ public class Person {
 
         IntStream.rangeClosed(1, 100).boxed().map(number -> new Person("NameTest" + number,
                 "SurnameTest" + number, number < 15 || number > 30 ? new Random().ints(15,
-                30).findFirst().getAsInt() : number)).filter(x -> x.getAge() < 21).peek();
+                30).findFirst().getAsInt() : number)).filter(x -> x.getAge() < 21).
+                peek(System.out::println).sorted(Comparator.comparing(Person::getSurname).thenComparing(Person::getName))
+                .limit(4).collect(Collectors.toList()).forEach(System.out::println);
 
     }
 
