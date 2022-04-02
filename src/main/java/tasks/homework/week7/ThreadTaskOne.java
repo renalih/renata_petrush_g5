@@ -1,13 +1,10 @@
 package main.java.tasks.homework.week7;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
-import java.util.stream.Stream;
 
-public class TaskOne {
+public class ThreadTaskOne {
     public static void main(String[] args) {
 
         Thread t1 = new Thread(() -> {
@@ -59,7 +56,7 @@ public class TaskOne {
     }
 
     public static void mouseCreation() throws InterruptedException {
-        List<Mouse> mice = IntStream.rangeClosed(1, 20).boxed().map(count -> new Mouse(count)).limit(20).
+        List<Mouse> mice = IntStream.rangeClosed(1, 20).boxed().map(Mouse::new).limit(20).
                 collect(Collectors.toList());
         for (Mouse m : mice) {
             m.peep();
