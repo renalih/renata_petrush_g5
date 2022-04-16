@@ -1,0 +1,44 @@
+Top logo:
+//img[@class='i-valign-middle']
+
+Upper toolbar:
+//span[@class='toolbar__btn toolbar__btn_primary i-valign-middle']
+
+Mail.ru button:
+//a[@class='ph-project svelte-jq5qv5 ph-project_current']
+
+Cloud button:
+//a[@class='ph-project svelte-jq5qv5' and contains(., 'Облако')]
+
+Sign up button:
+//a[@class='ph-project ph-project__register svelte-1hiqrvn']
+
+Sign in button:
+//button[@class='ph-login svelte-1hiqrvn']
+
+Mailbox:
+//a[@href='https://trk.mail.ru/c/veoz41']
+
+Login button:
+//button[@class='resplash-btn resplash-btn_primary resplash-btn_mailbox-big svelte-prwih']
+
+Create mailbox:
+//div[@class='footer svelte-o53kjm footer_logged-out']
+
+Weather city:
+//a[@name='clb1221590']
+
+Details of weather:
+//a[@name='clb1283825'][@class='weather__more svelte-16a8jo']
+
+Search icon:
+//label[@class='search__icon svelte-byes78']
+
+Search button:
+//button[@id="search:submit"]
+
+Lady tab:
+//a[@data-testid='news-tabs-tab-item-lady']
+
+News first link:
+//li[@name="n372558728"]
