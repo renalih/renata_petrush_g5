@@ -1,0 +1,37 @@
+Spartak logo:
+//img[@alt='логотип Спартак']
+//a[@class='header_logo_img']
+
+Impresso from drop-down list:
+//ul[@class='menu full']//child::a[contains(.,'Импрессо')]
+
+Info for partners:
+//div[@class='content_menu']//child::span[text()='Информация для партнеров']
+
+Search:
+//i[@class='search fa search-btn lupa']
+
+Special version:
+//a[@href='/?special_version=Y']
+//span[@class='header__eye']
+
+RU version:
+//a[@class='header__lang__item header__lang__item_ru active']
+
+CH version:
+//a[@href='/cn/']
+
+Download catalog:
+//a[@class='download-catalog' or contains(text(),'Скачать каталог')]
+
+Next button:
+//a[@class='flex-next']
+
+Line:
+//ol//a[contains(.,'2')]
+
+VK icon:
+//div[@class='top_slider_wrapp']//img[@src='/bitrix/templates/our_shop/images/VK.svg']
+
+Youtube icon:
+//div[@class='top_slider_wrapp']//a[@href='https://www.youtube.com/channel/UC2xYusMBxs4XkwoPotvTw4A']
