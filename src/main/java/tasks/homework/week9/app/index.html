@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Main page</title>
+    <link rel="icon" href="favicon.ico">
+    <script type="text/javascript">
+        let globalVal;
+        function hideValue(x) {
+            globalVal=x.getAttribute('value');
+            x.setAttribute('value', "        ");
+        }
+
+        function setValue(x) {
+            x.setAttribute('value', globalVal);
+        }
+    </script>
+    <style>
+        body {
+        text-align: center;
+        }
+        input {
+            background: url(pic.png);
+            background-position: center;
+            width: 400-500px; height: 110-150px;
+            font-weight: bold;
+            font-size: 200%;
+            border: none;
+            cursor: pointer;
+            }
+        input:hover {
+            background: url(pic2.png);
+        }
+        H1 {
+            font-family: Century Gothic, sans-serif;
+            font-size: 500%;}
+        p {
+            font-size: 12pt;
+            font-family: Comic Sans MS, sans-serif;
+            color: #808080;
+        }
+    </style>
+</head>
+<body>
+    <H1 align="center">Welcome</H1>
+
+    <form method="get" action="about.html">
+        <input type="submit" id="about" value="About Us" style="text-align: center;"
+               onmouseover="hideValue(this)" onmouseout="setValue(this)">
+    </form>
+    <form method="get" action="">
+        <input type="submit" id="regis" value="Check Registration" style="text-align: center;"
+               onmouseover="hideValue(this)" onmouseout="setValue(this)">
+    </form>
+    <form method="get" action="media.html">
+        <input type="submit" id="media" value="Get Media" style="text-align: center;"
+               onmouseover="hideValue(this)" onmouseout="setValue(this)">
+    </form>
+    <br/>
+    <br/>
+    <p>"This is just a dummy site (c)"</p>
+
+</body>
+</html>
