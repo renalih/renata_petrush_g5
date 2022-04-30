@@ -8,6 +8,6 @@ public interface Containable {
     Transformable removeStuff();
     boolean isEmpty();
     void open();
-    void warm(int temperature);
+    public void warm(int temperature);
 
 }

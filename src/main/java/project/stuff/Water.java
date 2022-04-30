@@ -45,4 +45,9 @@ public abstract class Water implements Transformable {
     public void setTemperature(int temperature) {
         this.temperature = temperature;
     }
+
+    @Override
+    public void setOpened() {
+        System.out.println("Вода находится в открытом состоянии");
+    }
 }

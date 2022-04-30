@@ -1,54 +1,47 @@
 package main.java.project.stuff;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 public class SparklingWater extends Water {
 
-    private Bubble[] bubbles;
+    private List<Bubble> bubbles;
     private boolean isOpened;
 
-    public SparklingWater(String color, String transparency, String smell, int temperature, boolean isOpened) {
+    public SparklingWater(String color, String transparency, String smell,
+                          int temperature, boolean isOpened) throws InterruptedException {
         super(color, transparency, smell, temperature);
-        this.bubbles = new Bubble[10000];
-        this.isOpened = isOpened;
+        bubbles = IntStream.rangeClosed(1, 10000).boxed().map(x -> new Bubble("CO2")).collect(Collectors.toList());
+        isOpened();
     }
 
-/*    public void pump(Bubble[] bubbles) {
-        this.bubbles = bubbles;
-    }*/
-
-    private void isOpened(boolean status) throws InterruptedException {
+    private void isOpened() throws InterruptedException {
         Thread.sleep(2000);
         if (isOpened) {
-            degas();
+            for (int i = 0; i < bubbles.size(); i++) {
+                degas();
+            }
         }
     }
 
-    public void degas() throws InterruptedException {
-
+    public void degas() throws InterruptedException { //переписать! создаются новые пузырьки
         Thread.sleep(1000);
-        List<Bubble> list = new ArrayList<>(10 + 5 * getTemperature());
 
-        for (int i = 0; i < list.size(); i++) {
-            list.add(new Bubble("CO2"));
+/*        List<Bubble> freebubbles = new ArrayList<>(10 + 5 * getTemperature());
+
+        for (int i = 0; i < freebubbles.size(); i++) {
+            freebubbles.add(new Bubble("CO2"));
         }
 
-        for (Bubble b : list) {
+        for (Bubble b : freebubbles) {
             b.cramp();
-        }
+        }*/
     }
 
-        public void setOpen(boolean isOpened) {
-            this.isOpened = isOpened;
-        }
-
-
-    @Override
-    public void setOpened() {
-
+    public boolean setOpen() {
+        return isOpened = true;
     }
+
 }
