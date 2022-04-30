@@ -40,7 +40,8 @@ public class VesselBox implements Containable {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         VesselBox vesselBox = (VesselBox) o;
-        return capacity == vesselBox.capacity && id == vesselBox.id && Objects.equals(name, vesselBox.name) && Objects.equals(box, vesselBox.box);
+        return capacity == vesselBox.capacity && id == vesselBox.id && Objects.equals(name, vesselBox.name)
+                && Objects.equals(box, vesselBox.box);
     }
 
     @Override
